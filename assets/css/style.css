@@ -97,11 +97,43 @@ header {
 
 /* Hero Image */
 
-#hero-image{
+#hero-outer{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image1{
     background-color: gold;
-    height:600px;
+    height:400px;
     background: url('../images/children_practicing_soccer.png') no-repeat center center;
+    background-size: cover;
     
+}
+#hero-image2{
+    background-color: gold;
+    height:400px;
+    background: url('../images/children_jumping.png') no-repeat center center;
+    background-size: cover;
+    
+}
+
+#hero-image1, #hero-image2{
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+#hero-textbox{
+    width:33%;
+    position: absolute;
+    top:50%;
+    left:33%;
+    background:rgba(169, 13, 13,0.6);
+    color:whitesmoke;
+    text-align: center;
+    font-size: 300%;
+    text-transform: uppercase;
 }
 
 /*About Us*/
