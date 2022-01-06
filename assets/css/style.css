@@ -25,8 +25,19 @@ header > hr {
 
 header {
     padding: 0 5px;
-}
+ }
+  
+    .fixed-header{
+        width: 100%;
+        position: fixed;        
+        padding-bottom: 5px;
+        top:0;
+        background: #fff;
+        z-index: 2;
+        
 
+    }
+   
 
 /* Logo */
 #logo h1{
@@ -89,8 +100,11 @@ header {
 /*Main Content Box*/
 
 #content-boxs{
-    clear: both;
+   clear: both;
     margin:20px;
+    margin-top: 100px;
+
+   
 }
 
 /*Sections in Main Content Box - Start*/
