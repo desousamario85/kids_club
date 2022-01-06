@@ -161,6 +161,27 @@ header {
 /*Footer*/
 
 footer{
-    background-color: darkorchid;
-    height:400px;
+    height: 150px;
+}
+
+.social-networks{
+    text-align: center;
+
+}
+
+.social-networks > li{
+    display: inline;
+
+}
+
+.social-networks i{
+    font-size: 160%;
+    margin: 1%;
+    padding:5%;
+    color:#A90D0D;
+}
+
+.social-networks i:hover{
+    color:#333;
+
 }
