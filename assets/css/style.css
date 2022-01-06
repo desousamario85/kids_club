@@ -130,7 +130,7 @@ header {
     top:50%;
     left:33%;
     background:rgba(169, 13, 13,0.6);
-    color:whitesmoke;
+    color:#fff;
     text-align: center;
     font-size: 300%;
     text-transform: uppercase;
@@ -140,18 +140,21 @@ header {
 
 #about-us{
     background-color: blue;
-    clear:both
+    clear:both;
+    height:400px;
 }
 
 /*Services*/
 
 #services{
     background-color: chartreuse;
+    height:400px;
 }
 
 /*Contact Us*/
 #contact-us{
     background-color: crimson;
+    height:400px;
 }
 /*Sections in Main Content Box - End*/
 
@@ -159,4 +162,5 @@ header {
 
 footer{
     background-color: darkorchid;
+    height:400px;
 }
