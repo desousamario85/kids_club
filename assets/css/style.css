@@ -62,3 +62,35 @@ body{
 #content-boxs{
     clear: both;
 }
+
+/*Sections in Main Content Box - Start*/
+
+/* Hero Image */
+
+#hero-image{
+    background-color: gold;
+}
+
+/*About Us*/
+
+#about-us{
+    background-color: blue;
+}
+
+/*Services*/
+
+#services{
+    background-color: chartreuse;
+}
+
+/*Contact Us*/
+#contact-us{
+    background-color: crimson;
+}
+/*Sections in Main Content Box - End*/
+
+/*Footer*/
+
+footer{
+    background-color: darkorchid;
+}
