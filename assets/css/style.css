@@ -23,6 +23,11 @@ header > hr {
       
 }
 
+header {
+    padding: 0 5px;
+}
+
+
 /* Logo */
 #logo h1{
     font-family: Caveat,sans-serif;
@@ -30,6 +35,7 @@ header > hr {
     font-size:280%;    
     text-transform: uppercase;
     color: #A90D0D;
+    padding-left: 25px;
    
     
 }
