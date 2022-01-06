@@ -1,3 +1,12 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Rubik&display=swap');
+
+
 body{
-    background-color: blue;
+       font-family: Rubik,sans-serif ;
 }
+
+h1{
+    font-family: 'Island Moments',sans-serif;
+}
+
