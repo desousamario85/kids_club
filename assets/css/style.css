@@ -164,6 +164,12 @@ footer{
     height: 150px;
 }
 
+footer > hr {
+    border-bottom: 1px solid #333;
+    width:98%;
+    margin: 0 auto;
+      
+}
 .social-networks{
     text-align: center;
 
