@@ -40,7 +40,7 @@ header {
    
 
 /* Logo */
-#logo h1{
+h1{
     font-family: Caveat,sans-serif;
     letter-spacing: 4px;
     font-size:280%;    
@@ -109,6 +109,9 @@ header {
 
 /*Sections in Main Content Box - Start*/
 
+#content-boxs > section{
+   margin-top: 10px;
+}
 /* Hero Image */
 
 #hero-outer{
@@ -153,9 +156,16 @@ header {
 /*About Us*/
 
 #about-us{
-    background-color: blue;
     clear:both;
     height:400px;
+}
+
+#about-us > h1{
+    text-align: center;
+}
+
+#about-us p{
+    text-align: center;
 }
 
 /*Services*/
@@ -164,6 +174,26 @@ header {
     background-color: chartreuse;
     height:400px;
 }
+
+#image-circle-outer{
+
+    padding-left: 20px;
+    border: 1px solid #333;
+    float:right;
+    width: 100%px;
+    height: inherit;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+#image-right{
+   
+    background: url('/assets/images/hand-holding-caryons.jpg') no-repeat center center;
+    background-size: cover;
+   
+    }
+
+
 
 /*Contact Us*/
 #contact-us{
