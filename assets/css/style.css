@@ -204,8 +204,9 @@ header {
         height:400px;
 
 }
-#services-summary{
-    
+#services-summary-left a:hover, #services-summary-center a:hover{
+    color: #A90D0D;
+     
 }
  
 #services h2 {
@@ -222,7 +223,7 @@ header {
         
   }
  .slide-left div.inner {
-    animation: slide-left 5s;
+    animation: slide-left 3s;
     margin-top:0%;
     
   }
