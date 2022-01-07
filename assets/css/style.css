@@ -204,7 +204,7 @@ header {
         height:400px;
 
 }
-#services-summary-left a:hover, #services-summary-center a:hover{
+#services-summary-center span:hover , #services-summary-left span:hover{
     color: #A90D0D;
      
 }
