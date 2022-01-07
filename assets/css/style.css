@@ -1,6 +1,7 @@
 /*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Rubik&display=swap');
 
+/*Site Default Settings*/
 
 *{
     margin: 0;
@@ -8,9 +9,12 @@
     border:none;
 }
 
+html {
+    scroll-padding-top: 5em;
+  }
+
 body{
-       font-family: Rubik,sans-serif;
-     
+       font-family: Rubik,sans-serif;     
        color: #333
 }
 
@@ -265,14 +269,16 @@ footer{
 
 }
 
+.social-networks i:hover{
+    color:#333;
+
+}
+
+
+
 .social-networks i{
     font-size: 160%;
     margin: 1%;
     padding:5%;
     color:#A90D0D;
-}
-
-.social-networks i:hover{
-    color:#333;
-
 }
