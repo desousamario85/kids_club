@@ -27,8 +27,9 @@
                 <h1>Kids Play Club</h1>
             </a>
         </div>
-        <nav id="menu">
+        <nav id="menu" class="nav">
             <ul>
+                <li><a href="#content-boxs">Home</a></li></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
@@ -42,7 +43,9 @@
     <main id="content-boxs">
 
         <section id="hero-image">
-             
+             <!--
+             Photo by <a href="https://unsplash.com/@artem_kniaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Artem Kniaz</a> on <a href="https://unsplash.com/s/photos/children-playing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  -->
             <div id="hero-textbox">Welcome to the Kids Play Club</div>
 
         </section>
@@ -292,6 +295,50 @@
 
     <!--Font Awesome Script-->
     <script src="https://kit.fontawesome.com/71b772ea4c.js" crossorigin="anonymous"></script>
+
+    <!--Setting navigation item to active base where the user is on the page
+    https://alikhallad.com/how-to-highlight-active-links-for-one-page-navigation-with-javascript/
+    GitHub: https://gist.github.com/bomsn/a9a73a76aac632983b7fc10768bb6359
+     -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script>
+         $(document).ready(function () {
+             let menuScrollTimer = null;
+             $(".nav a").click(function (e) {
+                 // Prevent default behaviour ( scroll to element )
+                 e.preventDefault();
+                 if (menuScrollTimer === null) {
+                     // Highlight the clicked item
+                     $('.nav a.active').removeClass('active');
+                     $(this).addClass('active');
+                     // Smooth scroll to the target section
+                     let target = $(this).attr('href');
+                     $('html, body').animate({ scrollTop: $(target).offset().top - 80 }, 1050);
+                     // Set `menuScrollTimer` timer
+                     // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+                     // This will also prevent the scroll logic from running
+                     menuScrollTimer = setTimeout(function () {
+                         clearTimeout(menuScrollTimer);
+                         menuScrollTimer = null;
+                     }, 1050);
+                 }
+             });
+ 
+             $(window).scroll(function (e) {
+                 // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+                 if (menuScrollTimer === null) {
+                     let windowTop = $(this).scrollTop();
+ 
+                     $('.nav a').each(function (event) {
+                         if (windowTop >= $($(this).attr('href')).offset().top - 150) {
+                             $('.nav .active').removeClass('active');
+                             $(this).addClass('active');
+                         }
+                     });
+                 }
+             });
+         });
+     </script>
 
 </body>
 

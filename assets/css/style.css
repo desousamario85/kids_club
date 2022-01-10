@@ -11,7 +11,7 @@
 
 html {
     scroll-padding-top: 5em;
-}
+  }
 
 body {
     font-family: Rubik, sans-serif;
@@ -85,6 +85,7 @@ header {
     padding-bottom: 5px;
     top: 0;
     background: #fff;
+    z-index: 1;
 
 
 }
@@ -121,6 +122,11 @@ header {
 #menu a:hover {
     border-bottom: 2px solid #A90D0D;
     color: #A90D0D;
+}
+
+.nav .active {
+    color: #A90D0D !important;
+    border-bottom: 2px solid #A90D0D;
 }
 
 #menu,
@@ -587,3 +593,4 @@ a.modal-open {
     transform: translateX(0%);
     opacity: 1;
 }
+
