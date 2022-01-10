@@ -41,8 +41,8 @@
 
     <main id="content-boxs">
         <section id="hero-outer">
-            <div id="hero-image1" class="col2"></div>
-            <div id="hero-image2" class="col2"></div>
+            <div id="hero-image1" class="col2 float-left"></div>
+            <div id="hero-image2" class="col2 float-right"></div>
             <div id="hero-textbox">Welcome to the Kids Play Club</div>
         </section>
         <section id="about-us">
@@ -171,6 +171,96 @@
         <hr>
         <section id="contact-us">
             <h2 class="text-center">Contact Us</h2>
+            <div id="open-times" class="col3">
+
+                <!--General opening hours-->
+                <h3>Opening Hours</h3>
+                <table class="text-center">
+                    <tr>
+                        <th></th>
+                        <th>Opening</th>
+                        <th>Closing</th>
+                    </tr>
+
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>09:00</td>
+                        <td>19:00</td>
+
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:00</td>
+                        <td>18:00</td>
+
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10:00</td>
+                        <td>16:00</td>
+
+                    </tr>
+                    <tr>
+                        <td>Bank Holidays</td>
+                        <td>Closed</td>
+                        <td></td>
+
+                    </tr>
+                </table>
+<!--Aftercare Table-->
+                <br>
+                <h3>School Aftercare</h3>
+                <table class="text-center">
+                    <tr>
+                        <th>
+
+                        </th>
+                        <th>Opening</th>
+                        <th>Closing</th>
+                    </tr>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>14:00</td>
+                        <td>19:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday- Sunday</td>
+                        <td>Closed</td>
+                        <td></td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+            <div id="contact-form" class="col2">
+                <form method="POST" action="https://formdump.codeinstitute.net/" class="enquiry-form col2 float-right">
+                    <h3>Get in touch with us</h3>
+                    <label for="fname">First Name</label>
+                    <input id="fname" name="first_name" type="text" required class="text-input">
+
+                    <label for="lname">Last Name</label>
+                    <input id="lname" name="last_name" type="text" required class="text-input">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email_address" required class="text-input">
+
+                    <label for="email">Services Required</label>
+                    <select id="services-required" name="services_required" required class="text-input">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="volvo">Summer Camps</option>
+                        <option value="saab">Outdoor Sports</option>
+                        <option value="fiat">Arts and Craft</option>
+                        <option value="audi">Swimming Classes</option>
+                        <option value="audi">School Aftercare</option>
+                        <option value="audi">Music Lessons</option>
+                    </select>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="Yes">
+                    <label for="vehicle1">Sign up for our weekly newsletters?</label>
+
+                    <input class="contact-button" type="submit" value="Send Enquiry">
+                </form>
+            </div>
         </section>
         <hr>
     </main>

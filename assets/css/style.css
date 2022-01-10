@@ -58,10 +58,11 @@ h2 {
 
 h3 {
     font-size: 120%;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #A90D0D;
     margin-bottom: 5px;
     font-weight: lighter;
     font-style: italic;
+    color: #A90D0D;
 }
 
 i {
@@ -132,8 +133,6 @@ header {
 
 .col2 {
     width: 50%;
-    float: left;
-
 }
 
 .col3 {
@@ -142,6 +141,15 @@ header {
 
 .col4 {
     width: 25%
+}
+
+
+.float-left {
+    float: left
+}
+
+.float-right {
+    float: right;
 }
 
 /*Main Content Box*/
@@ -254,8 +262,8 @@ header {
 }
 
 #services a {
-    text-decoration:none;
-    color:#333;
+    text-decoration: none;
+    color: #333;
 }
 
 .slide-up {
@@ -308,9 +316,91 @@ header {
 /*Contact Us*/
 #contact-us {
 
-    height: 400px;
+    height: 600px;
 
 }
+
+
+#open-times {
+    float: left;
+}
+
+#contact-form {
+    float: right
+}
+
+
+/*Table Syling*/
+table {
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ad090d;
+    color: white;
+}
+
+
+/*Contact Us Form*/
+
+.enquiry-form {
+    color: #333;
+    max-width: 400px;
+    left: 10%;
+}
+
+.enquiry-form h3 {
+    color: #333;
+    margin-bottom: 20px;
+    color: #A90D0D;
+}
+
+.text-input {
+    background: transparent;
+    color: #333;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: #A90D0D;
+}
+
+.contact-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    color: #fff;
+    background-color: #A90D0D;
+    display: block;
+}
+
+.contact-button:hover {
+    background-color: #fff;
+    color: #A90D0D;
+}
+
 
 /*Sections in Main Content Box - End*/
 
@@ -318,6 +408,7 @@ header {
 
 footer {
     height: 150px;
+    clear: both
 }
 
 .social-networks {
@@ -349,7 +440,7 @@ footer {
 a.modal-open {
     display: block;
     padding: 20px;
-    color: #424242;
+    color: #333;
     font-weight: bold;
     margin: 50px auto;
     width: 200px;
@@ -422,19 +513,21 @@ a.modal-open {
     padding: 20px;
     display: block;
     text-align: center;
-  }
+}
 
 .modal-area {
     padding: 20px;
 }
+
 .modal-area p {
     padding: 20px 0;
     font-style: italic;
-    
+
 }
+
 .modal-area input[type="radio"] {
     display: none;
-    
+
 }
 
 .modal-area label {
@@ -443,7 +536,7 @@ a.modal-open {
     padding: 10px 20px;
     font-weight: 700;
     cursor: pointer;
-    z-index: +2;   
+    z-index: +2;
     color: #333;
     transition: all .5s ease-in-out;
     width: 80px;
@@ -452,8 +545,8 @@ a.modal-open {
 
 .modal-area input[type="radio"]:checked+label {
     background: #fff;
-    color:#A90D0D;
-    border-bottom:1px solid #A90D0D;
+    color: #A90D0D;
+    border-bottom: 1px solid #A90D0D;
 }
 
 .tab-list {
@@ -482,7 +575,7 @@ a.modal-open {
     top: 225px;
     height: 150px;
     perspective: 1000;
-    position:absolute;
+    position: absolute;
 }
 
 #opentab1:checked~.tab-list .tab1 {
@@ -499,14 +592,17 @@ a.modal-open {
     transform: translateX(0%);
     opacity: 1;
 }
+
 #opentab4:checked~.tab-list .tab4 {
     transform: translateX(0%);
     opacity: 1;
 }
+
 #opentab5:checked~.tab-list .tab5 {
     transform: translateX(0%);
     opacity: 1;
 }
+
 #opentab6:checked~.tab-list .tab6 {
     transform: translateX(0%);
     opacity: 1;
