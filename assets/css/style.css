@@ -48,7 +48,15 @@ h1{
 }
 
 h2 {
-    font-size:140%;
+    font-size:200%;
+    color: #A90D0D;
+    margin-bottom: 5px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h3 {
+    font-size:120%;
     border-bottom: 1px solid #333;
     margin-bottom: 5px;
     font-weight: lighter;
@@ -129,6 +137,11 @@ header {
 .col3{
     width:33%;
 }
+
+.col4
+{
+    width:25%
+}
 /*Main Content Box*/
 
 #content-boxs{
@@ -201,7 +214,8 @@ header {
 /*Services*/
 
 #services{
-        height:400px;
+        height:300px;
+        z-index: 1;
 
 }
 #services-summary-center span:hover , #services-summary-left span:hover{
@@ -209,32 +223,52 @@ header {
      
 }
  
-#services h2 {
+#services h3 {
     text-align: center;
     margin: 20px;
     padding: 20px 0;
     border: 1px solid #333;
     border-radius: 20px;
+    width: 80%;
+    cursor: pointer;
+  
 }
 
-.slide-left {
+.slide-up {
         overflow:hidden;
         float: right;
+        border-radius: 100%;
+        z-index: 2;
+        margin-top: 0;
+      position: relative;
+        top:0;  
+       
+          
         
   }
- .slide-left div.inner {
-    animation: slide-left 3s;
-    margin-top:0%;
-    
+ .slide-up div.inner {
+    animation: slide-up 3s;
+    border-radius: 100%;  
+  
+
+  }
+
+  .slide-up div.inner img {
+    max-width: fit-content;
+    max-height: 300px;
+  
+
   }
   
-  @keyframes slide-left {
+  @keyframes slide-up {
     from {
-      margin-left: 100%;
+      margin-top: 100%;
+     
     }
   
     to {
-      margin-left: 0%;
+      margin-top: 0%;
+      
     }
   }
 
@@ -251,6 +285,7 @@ header {
 #contact-us{
     background-color: crimson;
     height:400px;
+
 }
 /*Sections in Main Content Box - End*/
 
