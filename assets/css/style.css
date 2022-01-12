@@ -11,7 +11,7 @@
 
 html {
     scroll-padding-top: 5em;
-  }
+}
 
 body {
     font-family: Rubik, sans-serif;
@@ -181,8 +181,11 @@ header {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: url('../images/Childern_holding_up_kite.jpg') no-repeat center center;
-    background-size: cover}
+    background: url('../images/childern_holding_up_kite.jpg') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 20px;
+
+}
 
 #hero-textbox {
     width: 33%;
@@ -202,6 +205,7 @@ header {
     clear: both;
     margin-bottom: 20px;
     display: block;
+    height: 400px;
 }
 
 #about-us p {
@@ -212,7 +216,7 @@ header {
 /*Services*/
 
 #services {
-    height: 300px;
+    height: 400px;
     z-index: 1;
 
 }
@@ -302,7 +306,7 @@ header {
 #contact-us {
 
     height: 600px;
-    
+
 
 }
 
@@ -385,6 +389,12 @@ th {
 .contact-button:hover {
     background-color: #fff;
     color: #A90D0D;
+    border: 1px solid #A90D0D;
+    cursor: pointer;
+}
+
+.contact-button:focus {
+    cursor: progress;
 }
 
 
@@ -593,4 +603,19 @@ a.modal-open {
     transform: translateX(0%);
     opacity: 1;
 }
+
+/*Back to top*/
+
+.back-to-top-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #d6e3f0;
+    padding: 0.25rem;
+  }
 

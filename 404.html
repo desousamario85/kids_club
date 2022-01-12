@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kids PLay Club where kids can have fun and learn at the same time">
+    <meta name="keywords" content="aftercare school, kids club, swimming, arts and craft, summer camps, music lessons">
+
+    <!--CSS Stylesheets Start-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--CSS Stylesheets End-->
+
+    <!--Favicon Start-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
+    <!--Favicon End-->
+
+    <title>Page not found </title>
+</head>
+
+<body>
+    <header class="fixed-header">
+        <!-- Logo Start-->
+        <div id="logo">
+            <a href="#content-boxs">
+                <h1>Kids Play Club</h1>
+            </a>
+        </div>
+        <!--Logo End-->
+
+        <!--Navigation Start-->
+        <nav id="menu" class="nav">
+            <ul>
+                <li><a href="#content-boxs">Home</a></li>
+                </li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        <!--Navigation End-->
+        <hr>
+    </header>
+    <!-- 404 Error Content Start-->
+   <h1>Error 404</h1>
+   <p>The page you are looking for is not found</p>
+
+    <!-- 404 Error Content End-->
+
+    <!--Footer Start-->
+    <footer>
+        <ul class="social-networks">
+            <li>
+                <a href="http://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in new tab)"><i class="fab fa-facebook"> Facebook</i></a>
+            </li>
+            <li>
+                <a href="http://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in new tab)"><i class="fab fa-twitter"> Twitter</i></a>
+            </li>
+            <li>
+                <a href="http://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Youtube page (opens in new tab)"><i class="fab fa-youtube"> Youtube</i></a>
+            </li>
+            <li>
+                <a href="http://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in new tab)"><i class="fab fa-instagram">
+                        Instagram</i></a>
+            </li>
+
+        </ul>
+    </footer>
+    <!--Footer End-->
+
+    <!--Font Awesome Script Start-->
+    <script src="https://kit.fontawesome.com/71b772ea4c.js" crossorigin="anonymous"></script>
+    <!--Font Awesome Script End-->
+
+    <!-- Javascript to Set active Class on Menu Items Start-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let menuScrollTimer = null;
+            $(".nav a").click(function (e) {
+                // Prevent default behaviour ( scroll to element )
+                e.preventDefault();
+                if (menuScrollTimer === null) {
+                    // Highlight the clicked item
+                    $('.nav a.active').removeClass('active');
+                    $(this).addClass('active');
+                    // Smooth scroll to the target section
+                    let target = $(this).attr('href');
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top - 80
+                    }, 1050);
+                    // Set `menuScrollTimer` timer
+                    // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+                    // This will also prevent the scroll logic from running
+                    menuScrollTimer = setTimeout(function () {
+                        clearTimeout(menuScrollTimer);
+                        menuScrollTimer = null;
+                    }, 1050);
+                }
+            });
+
+            $(window).scroll(function (e) {
+                // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+                if (menuScrollTimer === null) {
+                    let windowTop = $(this).scrollTop();
+
+                    $('.nav a').each(function (event) {
+                        if (windowTop >= $($(this).attr('href')).offset().top - 150) {
+                            $('.nav .active').removeClass('active');
+                            $(this).addClass('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- Javascript to Set active Class on Menu Items End -->
+
+</body>
+
+</html>

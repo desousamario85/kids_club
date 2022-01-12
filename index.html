@@ -8,48 +8,55 @@
     <meta name="description" content="Kids PLay Club where kids can have fun and learn at the same time">
     <meta name="keywords" content="aftercare school, kids club, swimming, arts and craft, summer camps, music lessons">
 
-    <!--CSS Stylesheets-->
+    <!--CSS Stylesheets Start-->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!--CSS Stylesheets End-->
 
-    <!--Favicon-->
+    <!--Favicon Start-->
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
+    <!--Favicon End-->
 
     <title>Kids Play Club</title>
 </head>
 
 <body>
     <header class="fixed-header">
+        <!-- Logo Start-->
         <div id="logo">
             <a href="#content-boxs">
                 <h1>Kids Play Club</h1>
             </a>
         </div>
+        <!--Logo End-->
+
+        <!--Navigation Start-->
         <nav id="menu" class="nav">
             <ul>
-                <li><a href="#content-boxs">Home</a></li></li>
+                <li><a href="#content-boxs">Home</a></li>
+                </li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
             </ul>
 
         </nav>
-
+        <!--Navigation End-->
         <hr>
     </header>
-
+    <!-- Landing Page Content Start-->
     <main id="content-boxs">
 
         <section id="hero-image">
-             <!--
+            <!--
              Photo by <a href="https://unsplash.com/@artem_kniaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Artem Kniaz</a> on <a href="https://unsplash.com/s/photos/children-playing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   -->
             <div id="hero-textbox">Welcome to the Kids Play Club</div>
 
         </section>
-
+        <hr>
         <section id="about-us">
             <h2 class="text-center">About Us</h2>
             <p class="text-center">Kids Play Club we strive to provide children a vartiy of activities, keeping them
@@ -57,6 +64,18 @@
                 A part for being a fun kids club we also offer afterschool facilities. Parents can sign up their
                 children for other activities which might be taking part during the day.
             </p>
+            <p>We have been operating for over 20 years providing children the facilities to live a healthy lifesyle.
+            </p>
+
+            <h3>Why chose us?</h3>
+
+            <ul>
+                <li>All our staff members acreddiated in the own fields</li>
+                <li>Tons of fun for the kids</li>
+                <li>Open all year round</li>
+                <li>On-site Coffee shop</li>
+                <li>Free welcome pack to all new joiners</li>
+            </ul>
 
         </section>
         <hr>
@@ -212,7 +231,7 @@
 
                     </tr>
                 </table>
-<!--Aftercare Table-->
+                <!--Aftercare Table-->
                 <br>
                 <h3>School Aftercare</h3>
                 <table class="text-center">
@@ -253,12 +272,12 @@
                     <label for="email">Services Required</label>
                     <select id="services-required" name="services_required" required class="text-input">
                         <option disabled selected value> -- select an option -- </option>
-                        <option value="volvo">Summer Camps</option>
-                        <option value="saab">Outdoor Sports</option>
-                        <option value="fiat">Arts and Craft</option>
-                        <option value="audi">Swimming Classes</option>
-                        <option value="audi">School Aftercare</option>
-                        <option value="audi">Music Lessons</option>
+                        <option value="Summer Camps">Summer Camps</option>
+                        <option value="Outdoor Sports">Outdoor Sports</option>
+                        <option value="Arts and Craft">Arts and Craft</option>
+                        <option value="Swimming Classes">Swimming Classes</option>
+                        <option value="School Aftercare">School Aftercare</option>
+                        <option value="Music Lessons">Music Lessons</option>
                     </select>
                     <input type="checkbox" id="newsletter" name="newsletter" value="Yes">
                     <label for="vehicle1">Sign up for our weekly newsletters?</label>
@@ -266,10 +285,22 @@
                     <input class="contact-button" type="submit" value="Send Enquiry">
                 </form>
             </div>
+
+
         </section>
         <hr>
+
+        <!--Back to Top Start-->
+        <div class="back-to-top-wrapper">
+            <a href="#content-boxs" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+        </div>
+        <!--Back to Top End-->
+        
     </main>
 
+    <!-- Landing Page Content End-->
+
+    <!--Footer Start-->
     <footer>
         <ul class="social-networks">
             <li>
@@ -292,53 +323,55 @@
 
         </ul>
     </footer>
+    <!--Footer End-->
 
-    <!--Font Awesome Script-->
+    <!--Font Awesome Script Start-->
     <script src="https://kit.fontawesome.com/71b772ea4c.js" crossorigin="anonymous"></script>
+    <!--Font Awesome Script End-->
 
-    <!--Setting navigation item to active base where the user is on the page
-    https://alikhallad.com/how-to-highlight-active-links-for-one-page-navigation-with-javascript/
-    GitHub: https://gist.github.com/bomsn/a9a73a76aac632983b7fc10768bb6359
-     -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <script>
-         $(document).ready(function () {
-             let menuScrollTimer = null;
-             $(".nav a").click(function (e) {
-                 // Prevent default behaviour ( scroll to element )
-                 e.preventDefault();
-                 if (menuScrollTimer === null) {
-                     // Highlight the clicked item
-                     $('.nav a.active').removeClass('active');
-                     $(this).addClass('active');
-                     // Smooth scroll to the target section
-                     let target = $(this).attr('href');
-                     $('html, body').animate({ scrollTop: $(target).offset().top - 80 }, 1050);
-                     // Set `menuScrollTimer` timer
-                     // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-                     // This will also prevent the scroll logic from running
-                     menuScrollTimer = setTimeout(function () {
-                         clearTimeout(menuScrollTimer);
-                         menuScrollTimer = null;
-                     }, 1050);
-                 }
-             });
- 
-             $(window).scroll(function (e) {
-                 // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
-                 if (menuScrollTimer === null) {
-                     let windowTop = $(this).scrollTop();
- 
-                     $('.nav a').each(function (event) {
-                         if (windowTop >= $($(this).attr('href')).offset().top - 150) {
-                             $('.nav .active').removeClass('active');
-                             $(this).addClass('active');
-                         }
-                     });
-                 }
-             });
-         });
-     </script>
+    <!-- Javascript to Set active Class on Menu Items Start-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let menuScrollTimer = null;
+            $(".nav a").click(function (e) {
+                // Prevent default behaviour ( scroll to element )
+                e.preventDefault();
+                if (menuScrollTimer === null) {
+                    // Highlight the clicked item
+                    $('.nav a.active').removeClass('active');
+                    $(this).addClass('active');
+                    // Smooth scroll to the target section
+                    let target = $(this).attr('href');
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top - 80
+                    }, 1050);
+                    // Set `menuScrollTimer` timer
+                    // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+                    // This will also prevent the scroll logic from running
+                    menuScrollTimer = setTimeout(function () {
+                        clearTimeout(menuScrollTimer);
+                        menuScrollTimer = null;
+                    }, 1050);
+                }
+            });
+
+            $(window).scroll(function (e) {
+                // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+                if (menuScrollTimer === null) {
+                    let windowTop = $(this).scrollTop();
+
+                    $('.nav a').each(function (event) {
+                        if (windowTop >= $($(this).attr('href')).offset().top - 150) {
+                            $('.nav .active').removeClass('active');
+                            $(this).addClass('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- Javascript to Set active Class on Menu Items End -->
 
 </body>
 
