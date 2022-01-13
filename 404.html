@@ -36,7 +36,6 @@
         <nav id="menu" class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                </li>
                 <li><a href="index.html#about-us">About Us</a></li>
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#contact-us">Contact Us</a></li>
@@ -48,18 +47,18 @@
     </header>
     <!-- 404 Error Content Start-->
     <main id="content-boxs">
-    <section id="error_404" class="text-center">
+        <section id="error_404" class="text-center">
 
-   <h1>Error 404</h1>
-   <p>The page you are looking for is not found</p>
+            <h2>Error 404</h2>
+            <p>The page you are looking for is not found</p>
 
-   
 
-   <div id="error-bg">
-   </div>
-   <a href="index.html" class="contact-button text-center">Go back Home page</a>
-    </section>
-</main>
+
+            <div id="error-bg">
+            </div>
+            <a href="index.html" class="contact-button text-center">Go back Home page</a>
+        </section>
+    </main>
     <!-- 404 Error Content End-->
 
     <!--Footer Start-->
@@ -91,50 +90,6 @@
     <!--Font Awesome Script Start-->
     <script src="https://kit.fontawesome.com/71b772ea4c.js" crossorigin="anonymous"></script>
     <!--Font Awesome Script End-->
-
-    <!-- Javascript to Set active Class on Menu Items Start-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            let menuScrollTimer = null;
-            $(".nav a").click(function (e) {
-                // Prevent default behaviour ( scroll to element )
-                e.preventDefault();
-                if (menuScrollTimer === null) {
-                    // Highlight the clicked item
-                    $('.nav a.active').removeClass('active');
-                    $(this).addClass('active');
-                    // Smooth scroll to the target section
-                    let target = $(this).attr('href');
-                    $('html, body').animate({
-                        scrollTop: $(target).offset().top - 80
-                    }, 1050);
-                    // Set `menuScrollTimer` timer
-                    // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-                    // This will also prevent the scroll logic from running
-                    menuScrollTimer = setTimeout(function () {
-                        clearTimeout(menuScrollTimer);
-                        menuScrollTimer = null;
-                    }, 1050);
-                }
-            });
-
-            $(window).scroll(function (e) {
-                // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
-                if (menuScrollTimer === null) {
-                    let windowTop = $(this).scrollTop();
-
-                    $('.nav a').each(function (event) {
-                        if (windowTop >= $($(this).attr('href')).offset().top - 150) {
-                            $('.nav .active').removeClass('active');
-                            $(this).addClass('active');
-                        }
-                    });
-                }
-            });
-        });
-    </script>
-    <!-- Javascript to Set active Class on Menu Items End -->
 
 </body>
 
