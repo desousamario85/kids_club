@@ -497,7 +497,7 @@ a.modal-open {
     margin:20px auto;
 }
 #error-bg{
-    background: url('/assets/images/404-error.png') no-repeat center center;
+    background: url('../images/404-error.png') no-repeat center center;
     background-size: contain;
 
     height: 400px;
