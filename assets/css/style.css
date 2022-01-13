@@ -138,7 +138,7 @@ header {
 	background-size: cover;
 	margin-bottom: 20px;
 }
-#hero-textbox {
+#hero-textbox h2{
 	width: 33%;
 	position: absolute;
 	top: 50%;
@@ -204,8 +204,8 @@ header {
 	border-radius: 100%;
 }
 .slide-up div.inner img {
-	max-width: fit-content;
-	max-height: 300px;
+	max-width: 500px;
+	max-height: 500px;
 }
 @keyframes slide-up {
 	from {
