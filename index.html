@@ -23,28 +23,30 @@
 </head>
 
 <body>
-    <header class="fixed-header">
-        <!-- Logo Start-->
-        <div id="logo">
-            <a href="#content-boxs">
-                <h1>Kids Play Club</h1>
-            </a>
-        </div>
-        <!--Logo End-->
+    <header>
 
-        <!--Navigation Start-->
-        <nav id="menu" class="nav">
-            <ul>
+        <section class="top-nav fixed-header">
+            <div id="logo">
+                <h1>Kids Play Club</h1>
+            </div>
+            <ul class="menu" id="menu">
                 <li><a href="#content-boxs">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
-            </ul>
 
-        </nav>
-        <!--Navigation End-->
-        <hr>
+                <!--Icon created and provided by Icon8.com-->
+                <a class="close" href="#">
+                    <img src="./assets/images/icons8-close.svg" alt="close">
+                </a>
+            </ul>
+            <a class="hamburger" href="#menu">
+                <img src="./assets/images/icons8-menu.svg" alt="menu">
+            </a>
+
+        </section>
     </header>
+    <hr>
     <!-- Landing Page Content Start-->
     <main id="content-boxs">
 
@@ -52,13 +54,15 @@
             <!--
              Photo by <a href="https://unsplash.com/@artem_kniaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Artem Kniaz</a> on <a href="https://unsplash.com/s/photos/children-playing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   -->
-            <div id="hero-textbox"><h2>Welcome to the Kids Play Club</h2></div>
+            <div id="hero-textbox">
+                <h2>Welcome to the Kids Play Club</h2>
+            </div>
 
         </section>
         <hr>
         <section id="about-us">
             <h2 class="text-center">About Us</h2>
-            <div class="col2 float-left">
+            <div id="about-us-content" class="col2 float-left">
                 <p class="text-center">Kids Play Club we strive to provide children a vartiy of activities, keeping them
                     active, aswell learning at the same time.
                     A part for being a fun kids club we also offer afterschool facilities. Parents can sign up their
@@ -66,20 +70,22 @@
                 </p>
                 <p>We have been operating for over 20 years providing children the facilities to live a healthy
                     lifesyle.
-                </p>
-                <br>
-                <h3 class=col4>Why chose us?</h3>
+                </p class="text-center">
+                <div id="why-chose-us" class="col2">
+                    <h3>Why chose us?</h3>
 
-                <ul>
-                    <li>All our staff members acreddiated in the own fields</li>
-                    <li>Tons of fun for the kids</li>
-                    <li>Open all year round</li>
-                    <li>On-site Coffee shop</li>
-                    <li>Free welcome pack to all new joiners</li>
-                </ul>
+                    <ul>
+                        <li>All our staff members acreddiated in the own fields</li>
+                        <li>Open to all ages</li>
+                        <li>Free on-site parking</li>
+                        <li>On-site Coffee shop</li>
+                        <li>Free unlimited Wifi</li>
+                        <li>Free welcome pack to all new joiners</li>
+                    </ul>
+                </div>
             </div>
             <div class="col2 float-right">
-                <img src="./assets/images/children_jumping.png"  alt="" aria-label="Childre jumping on a jumping castle">
+                <img src="./assets/images/children_jumping.png" alt="" aria-label="Childre jumping on a jumping castle">
             </div>
 
         </section>
@@ -132,10 +138,10 @@
                     <div class="modal-area">
                         <p>Summer Camps are ran from June until the first week in September. There are limited amount of
                             aviable slots for each programme</p>
-                            
-                            <p>Keep up-to-date with our Social Media to find our more on our Summer Camps offerings, to
+
+                        <p>Keep up-to-date with our Social Media to find our more on our Summer Camps offerings, to
                             book your child slot.</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -151,13 +157,13 @@
                             <br>
                             We have the following pitches available.</p>
 
-                            <ul>
-                                <li>2 x Hockey Pitches</li>
-                                <li>1 x Football astro turf pitches</li>
-                                <li>1 x Basketball/Netball court</li>
-                                <li>3 x Tennis Pitches</li>
-                            </ul>
-                        
+                        <ul>
+                            <li>2 x Hockey Pitches</li>
+                            <li>1 x Football astro turf pitches</li>
+                            <li>1 x Basketball/Netball court</li>
+                            <li>3 x Tennis Pitches</li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -173,15 +179,15 @@
                             <br>
                             Classes are offered in the different age groups.</p>
 
-                            <ul>
-                                <li>5 - 6 years old</li>
-                                <li>6 - 7 years old</li>
-                                <li>8 - 9 years old</li>
-                                <li>10 - 13 years old</li>
-                            </ul>
+                        <ul>
+                            <li>5 - 6 years old</li>
+                            <li>6 - 7 years old</li>
+                            <li>8 - 9 years old</li>
+                            <li>10 - 13 years old</li>
+                        </ul>
 
-                            <p>Adult classes are avialable on Saturdays</p>
-                        
+                        <p>Adult classes are avialable on Saturdays</p>
+
                     </div>
                 </div>
             </div>
@@ -229,8 +235,7 @@
             <!--Modal Content End-->
             <div class="slide-up col4">
                 <div class="inner ">
-                    <img src="./assets/images/hand-holding-caryons.jpg" alt=""
-                        aria-label="some colouring with crayons displayed in glass container">
+                    <img src="./assets/images/hand-holding-caryons.jpg" alt="" aria-label="some colouring with crayons displayed in glass container">
                 </div>
             </div>
 
@@ -242,28 +247,70 @@
 
                 <!--General opening hours-->
                 <div class="float-left">
-                <h3>Opening Hours</h3>
-                <table>
-                    <tr><th>Monday</th><td>09:00 - 19:00</td></tr>
-                    <tr><th>Tuesday</th><td>09:00 - 19:00</td></tr>
-                    <tr><th>Wednesday</th><td>09:00 - 19:00</td></tr>
-                    <tr><th>Thursday</th><td>09:00 - 19:00</td></tr>
-                    <tr><th>Friday</th><td>09:00 - 19:00</td></tr>
-                    <tr><th>Saturday</th><td>09:00 - 19:00</td></tr>
-                    <tr><th>Sunday</th><td>09:00 - 19:00</td></tr>
-                    <tr><th>Bank Holiday</th><td>Closed</td></tr>
+                    <h3>Opening Hours</h3>
+                    <table>
+                        <tr>
+                            <th>Monday</th>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Tuesday</th>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Wednesday</th>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Thursday</th>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Friday</th>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Saturday</th>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Sunday</th>
+                            <td>09:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Bank Holiday</th>
+                            <td>Closed</td>
+                        </tr>
                     </table>
                 </div>
                 <!--Aftercare Table-->
                 <div class="float-right">
-                <h3>School Aftercare</h3>
-                <table>
-                    <tr><th>Monday</th><td>14:00 - 19:00</td></tr>
-                    <tr><th>Tuesday</th><td>14:00 - 19:00</td></tr>
-                    <tr><th>Wednesday</th><td>14:00 - 19:00</td></tr>
-                    <tr><th>Thursday</th><td>14:00 - 19:00</td></tr>
-                    <tr><th>Friday</th><td>14:00 - 19:00</td></tr>
-                    <tr><th>Weekend/Bank Holiday</th><td>Closed</td></tr>
+                    <h3>School Aftercare</h3>
+                    <table>
+                        <tr>
+                            <th>Monday</th>
+                            <td>14:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Tuesday</th>
+                            <td>14:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Wednesday</th>
+                            <td>14:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Thursday</th>
+                            <td>14:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Friday</th>
+                            <td>14:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Weekend/Bank Holiday</th>
+                            <td>Closed</td>
+                        </tr>
                     </table>
 
                 </div>
@@ -316,20 +363,16 @@
     <footer>
         <ul class="social-networks">
             <li>
-                <a href="http://facebook.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in new tab)"><i class="fab fa-facebook"> Facebook</i></a>
+                <a href="http://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in new tab)"><i class="fab fa-facebook"> Facebook</i></a>
             </li>
             <li>
-                <a href="http://twitter.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Twitter page (opens in new tab)"><i class="fab fa-twitter"> Twitter</i></a>
+                <a href="http://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in new tab)"><i class="fab fa-twitter"> Twitter</i></a>
             </li>
             <li>
-                <a href="http://facebook.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Youtube page (opens in new tab)"><i class="fab fa-youtube"> Youtube</i></a>
+                <a href="http://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in new tab)"><i class="fab fa-youtube"> Youtube</i></a>
             </li>
             <li>
-                <a href="http://instagram.com" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in new tab)"><i class="fab fa-instagram">
+                <a href="http://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in new tab)"><i class="fab fa-instagram">
                         Instagram</i></a>
             </li>
 
@@ -344,9 +387,9 @@
     <!-- Javascript to Set active Class on Menu Items Start-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             let menuScrollTimer = null;
-            $(".nav a").click(function (e) {
+            $(".nav a").click(function(e) {
                 // Prevent default behaviour ( scroll to element )
                 e.preventDefault();
                 if (menuScrollTimer === null) {
@@ -361,19 +404,21 @@
                     // Set `menuScrollTimer` timer
                     // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
                     // This will also prevent the scroll logic from running
-                    menuScrollTimer = setTimeout(function () {
+                    menuScrollTimer = setTimeout(function() {
                         clearTimeout(menuScrollTimer);
                         menuScrollTimer = null;
                     }, 1050);
                 }
             });
 
-            $(window).scroll(function (e) {
+            $(window).scroll(function(e) {
                 // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+
+
                 if (menuScrollTimer === null) {
                     let windowTop = $(this).scrollTop();
 
-                    $('.nav a').each(function (event) {
+                    $('.nav a').each(function(event) {
                         if (windowTop >= $($(this).attr('href')).offset().top - 150) {
                             $('.nav .active').removeClass('active');
                             $(this).addClass('active');
