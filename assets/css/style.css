@@ -76,6 +76,7 @@ i {
 /*Header*/
 header {
     padding: 0 5px;
+    height: 100px;
 }
 
 .top-nav {
@@ -84,16 +85,14 @@ header {
     justify-content: space-between;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #333;
-    height: 80px;
+    height: 50px;
     padding: 1em;
     background-color: #fff;
 }
 
 .menu-button {
-
     display: none;
 }
-
 
 .menu-button,
 .menu-button::before,
@@ -111,12 +110,9 @@ header {
     display: none;
 }
 
-
-
 .menu-button::before {
     content: '';
     margin-top: -8px;
-
 }
 
 .menu-button::after {
@@ -127,7 +123,6 @@ header {
 .menu-button::before menu li {
     display: none;
 }
-
 
 #menu-toggle:checked+.menu-button-container .menu-button::before {
     margin-top: 0px;
@@ -142,7 +137,6 @@ header {
     margin-top: 0px;
     transform: rotate(-405deg);
 }
-
 
 .fixed-header {
     width: 100%;
@@ -184,19 +178,18 @@ header {
 }
 
 .menu a:hover {
-
+    border-bottom: 2px solid #A90D0D;
     color: #A90D0D;
-
 }
 
-.nav .active {
+.menu .active {
     color: #A90D0D !important;
-
+    border-bottom: 2px solid #A90D0D;
 }
 
 .menu,
 #logo {
-    line-height: 75px;
+    line-height: 50px;
 }
 
 /*Column Settings*/
@@ -228,11 +221,9 @@ header {
 #content-boxs {
     clear: both;
     margin: 20px;
-    margin-top: 100px;
 }
 
 /*Sections in Main Content Box - Start */
-
 /* Hero Image */
 #hero-image {
     height: 800px;
@@ -272,17 +263,13 @@ header {
 
 #about-us-content {
     margin: 20px auto;
-
 }
 
 #why-chose-us {
     margin: 50px auto;
 }
 
-
-
 #why-chose-us li {
-
     line-height: 2em;
 }
 
@@ -613,8 +600,6 @@ a.modal-open {
     font-size: 500%;
 }
 
-
-
 #error_404 .contact-button {
     width: 200px;
     margin: 20px auto;
@@ -623,13 +608,11 @@ a.modal-open {
 #error-bg {
     background: url('../images/404-error.png') no-repeat center center;
     background-size: contain;
-
     height: 400px;
     width: 100%;
 }
 
 /*Media queries*/
-
 @media screen and (max-width: 1200px) {
     #open-times .float-right {
         float: none;
@@ -658,15 +641,12 @@ a.modal-open {
     .enquiry-form {
         margin: 20px auto;
     }
-
 }
 
 @media screen and (max-width:950px) {
-
     h1 {
         font-size: 200%;
     }
-
 
     #error_404 {
         margin-top: 200px;
@@ -715,11 +695,9 @@ a.modal-open {
         visibility: visible
     }
 
-
     .menu {
         position: fixed;
-        /* give the menu a larger z-index than the ham link
-        to put the menu above it */
+        /* give the menu a larger z-index than the ham linkto put the menu above it */
         z-index: 100;
         top: 0;
         left: 0;
@@ -731,7 +709,6 @@ a.modal-open {
         list-style: none;
         background: rgba(0, 0, 0, 0.5);
         display: flex;
-
         flex-direction: column;
         /* animate slide up/down */
         transform: translateY(-100%);
@@ -761,13 +738,10 @@ a.modal-open {
     }
 
     #menu-toggle:checked~.menu li {
-
         height: 2.5em;
         padding: 0.5em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-
     }
-
 
     .menu>li {
         display: flex;
@@ -782,24 +756,16 @@ a.modal-open {
     .menu>li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
-
-
 }
 
-
-
 @media screen and (max-width:800px) {
-
-
     table {
         margin-left: auto;
         margin-right: auto;
         width: 250px;
     }
 
-
     .text-input {
-
         width: 250px;
     }
 
