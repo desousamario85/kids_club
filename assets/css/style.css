@@ -79,13 +79,12 @@ header {
 }
 
 .top-nav {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #333;
-    height: 50px;
+    height: 80px;
     padding: 1em;
     background-color: #fff;
 }
@@ -152,6 +151,11 @@ header {
     top: 0;
     background: #fff;
     z-index: 1;
+}
+
+.hamburger img,
+.close img {
+    visibility: hidden;
 }
 
 /* Logo */
@@ -248,8 +252,9 @@ header {
     background: rgba(169, 13, 13, 0.6);
     color: #fff;
     text-align: center;
-    font-size: 300%;
+    font-size: 280%;
     text-transform: uppercase;
+    padding: 10px;
 }
 
 /*About Us*/
@@ -707,6 +712,7 @@ a.modal-open {
     .close img {
         width: 100%;
         height: 100%;
+        visibility: visible
     }
 
 
