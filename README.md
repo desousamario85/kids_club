@@ -6,6 +6,14 @@ Kids Play Club website was created to filful most everyday parents needs for the
 
 ![Responsive Mockup Image](docs/readme_images/responsive_mockup.png)
 
+
+### Lighthouse Testing
+
+
+### Accessibility
+
+Wave Evalution tool was used to check and validate if I had any Accessibility issues
+
 ## Features 
 
 
@@ -56,25 +64,45 @@ Kids Play Club website was created to filful most everyday parents needs for the
 ![404 Error Page Image](docs/readme_images/404_page.png)
 
 ### Landing Page
-* Landing page image
-    * This will be a collection of favourite images from some of 'Taco's Travels. Images will change on a timer. 
-    * This will help to immediately show the user what the website is about and help to animate the page. 
 
 ![Landing Page Image](docs/readme_images/landing_section.png)
 
-* Website information on 'Taco'
-    * Information about 'Taco' and the websites purpose including an image of 'Taco' on his travels.
-    * This information lets the user know what the site is about. 
+
 
 ### About Us
 
-![About Us Section Image](docs/readme_images/landing_section.png)
+![About Us Section Image](docs/readme_images/about_us_section.png)
 
 ### Services
 
-![Services Section Image](docs/readme_images/landing_section.png)
+Under each provided services , I have created a pop up modal, where the user can get more details on the selected services.
+
+![Services Section Image](docs/readme_images/services_sections.png)
+
+Below are the List of services with their images of the modals.
+
+#### Summer Camp
+![Services Section Image](docs/readme_images/summer_camps.png)
+
+#### Outdoor Sports
+![Services Section Image](docs/readme_images/outdoor-sports.png)
+
+#### Arts and Craft
+![Services Section Image](docs/readme_images/arts_crafts.png)
+
+#### Swimming Class
+![Services Section Image](docs/readme_images/swimming_class.png)
+
+#### School Aftercare
+![Services Section Image](docs/readme_images/school_aftercare.png)
+
+#### Music Lessons
+![Services Section Image](docs/readme_images/music_lessons.png)
 
 ### Contact US
+
+On our Contact Us section, I have the operating hours for the services and a contact form, should the user wish to get incontact with us.
+
 ![Contact Us Section Image](docs/readme_images/contact_us_section.png)
 
     * A contact form will be implemented to allow users to contact Kids Play Club. The following inputs will be required by the user.
@@ -92,18 +120,19 @@ Kids Play Club website was created to filful most everyday parents needs for the
 
 ### Existing Features
 
-* Responsive design
-* Hidden interactive sections on adventure page
-* Responsive gallery with filtering
-* Contact form and success page
-* 3 Adventure trips and information
+Features that exist in this current project are listed below
+ 
+ * Modal pop up (CSS and HTML only)
+ * Mobile hamburger menu (CSS and HTML Only)
+ * Responsive to mobile devices
+ * CSS Animation
+ 
 
 ### Features Left to Implement
 
-* As a future enhancement, the contact form will be updated with javascript to send an email to Taco with the contact information.
+As this is a service that does not exist or is not offered and the site only built for Project purposes only the site functionility will remain the same.
 
-* Google map interaction to be added to the Adventures page instead of screen shots of the map.
-
+Future Improvement will be focused around the overall Design of the site.
 
 ## Technologies
 
@@ -126,3 +155,25 @@ Kids Play Club website was created to filful most everyday parents needs for the
 * CSS Cleanup
     * https://html-cleaner.com/css/ was user to clean up my CSS file to ensure the layout was consitent.
 
+### Content 
+
+All writen content on the site is my own is based on services that ,as a parent would like to see offered in 1 centeral location.
+
+### Media
+
+All Images on the site were provided and freely avialable on the listed sites below.
+
+* https://www.pexel.com
+* https://iconscout.com/illustrations/404-error
+* Photo by <a href="https://unsplash.com/@artem_kniaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Artem Kniaz</a> on <a href="https://unsplash.com/s/photos/children-playing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+
+### Credits
+
+Thanks to all forum contributors on the listed weblink which helped me code or resolve issues during the project. Their sample code or explaination helped me to include or add the functions in the website that I wanted.
+
+* https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html
+* https://www.sliderrevolution.com/resources/css-modal/
+* https://stackoverflow.com/questions/37738278/how-to-create-an-hours-of-operation-list-with-html-and-css
+
+To my mentor Daisy for providing a ReadMe Template , produced by Gareth-McGirr.

@@ -90,54 +90,6 @@ header {
     background-color: #fff;
 }
 
-.menu-button {
-    display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-    display: none;
-    background-color: #A90D0D;
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.menu-button::before {
-    content: '';
-    margin-top: -8px;
-}
-
-.menu-button::after {
-    content: '';
-    margin-top: 8px;
-}
-
-.menu-button::before menu li {
-    display: none;
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-}
-
 .fixed-header {
     width: 100%;
     position: fixed;
@@ -277,6 +229,7 @@ header {
 #services {
     height: 600px;
     z-index: 1;
+    clear: both;
 }
 
 #services-summary-center span:hover,
