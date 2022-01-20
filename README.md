@@ -1,26 +1,41 @@
 # Kids Play Club
 
-Kids Play Club website was created to filful most everyday parents needs for their children. As a parent living in Ireland, I know the struggles of finding activities for our children to do during the summer while we have to work. Then we still have the issue on trying to find childcare for our kids. Based on the needs or like to have requirements the Kids Play Club site was created. [here](https://desousamario85.github.io/kids_club/)
+Kids Play Club website was created to fulfil most everyday parents needs for their children. As a parent living in Ireland, I know the struggles of finding activities for our children to do during the summer while we have to work. Then we still have the issue on trying to find childcare for our kids. Based on the needs or like to have requirements the Kids Play Club site was created. [here](https://desousamario85.github.io/kids_club/)
 
 ## Site Across Devices
 
-![Responsive Mockup Image](docs/readme_images/responsive_mockup.png)
-
+![Responsive Mock up Image](docs/readme_images/responsive_mockup.png)
 
 ### Lighthouse Testing
 
+#### Home Page report
+
+![Home Page report Image](docs/readme_images/lighthouse_overall.png)
+
+#### 404 Page report
+
+![404 Page report Image](docs/readme_images/404_page.png)
+
+### w3 Validator
+
+#### Home Page report
+
+![Home Page report Image](docs/readme_images/w3_homepage.png)
+
+#### 404 Page report
+
+![Home Page report Image](docs/readme_images/w3_404.png)
 
 ### Accessibility
 
-Wave Evalution tool was used to check and validate if I had any Accessibility issues
+Wave Evaluation tool was used to check and validate if I had any Accessibility issues
 
 ## Features 
-
 
 ### Navigation Menu
     * Contains anchors to the top of the page, About us and Services and Contact Us sections on the web page.
     * Users can easily navigate through to any section on the site as the Navigation is in a fixed position.
-    * Pure CSS Hamburger menu was implement for mobile devices. The menu closes automatically when navigation anchor is selected
+    * Pure CSS Hamburger menu was implemented for mobile devices. The menu closes automatically when navigation anchor is selected
     * There is a back to Top button which allows to navigate back to the top of the site.
 
 **Desktop Navigation**
@@ -41,16 +56,15 @@ Wave Evalution tool was used to check and validate if I had any Accessibility is
 
 ### Footer
     
-    * The footer contains all the common social media weblinks. They are place holders and they only navigate to the each social media platform landpage.
+    * The footer contains all the common social media weblinks. They are place holders, and they only navigate to the each social media platform land page.
 
 **Footer**
 
 ![Footer Image](docs/readme_images/footer.png)
 
-
 * Favicon
-    * Following common practices and is visible in almost very website, is a icon in the address bar, which can be the companies logo or Text.
-    * For the Kids Play Club I used the first letter of each words to have the favicon created.
+    * Following common practices and is visible in almost every website, is an icon in the address bar, which can be the company’s logo or Text.
+    * For the Kids Play Club I used the first letter of each word to have the favicon created.
 
 **Favicon**
 
@@ -68,7 +82,6 @@ Wave Evalution tool was used to check and validate if I had any Accessibility is
 ![Landing Page Image](docs/readme_images/landing_section.png)
 
 
-
 ### About Us
 
 ![About Us Section Image](docs/readme_images/about_us_section.png)
@@ -82,22 +95,22 @@ Under each provided services , I have created a pop up modal, where the user can
 Below are the List of services with their images of the modals.
 
 #### Summer Camp
-![Services Section Image](docs/readme_images/summer_camps.png)
+![Summer Camp Image](docs/readme_images/summer_camps.png)
 
 #### Outdoor Sports
-![Services Section Image](docs/readme_images/outdoor-sports.png)
+![Outdoor Sports Image](docs/readme_images/outdoor-sports.png)
 
 #### Arts and Craft
-![Services Section Image](docs/readme_images/arts_crafts.png)
+![Arts and Craft Image](docs/readme_images/arts_crafts.png)
 
 #### Swimming Class
-![Services Section Image](docs/readme_images/swimming_class.png)
+![Swimming Class Image](docs/readme_images/swimming_class.png)
 
 #### School Aftercare
-![Services Section Image](docs/readme_images/school_aftercare.png)
+![School Aftercare Image](docs/readme_images/school_aftercare.png)
 
 #### Music Lessons
-![Services Section Image](docs/readme_images/music_lessons.png)
+![Music Lessons Image](docs/readme_images/music_lessons.png)
 
 ### Contact US
 
@@ -117,7 +130,6 @@ On our Contact Us section, I have the operating hours for the services and a con
 
      ![Successful Contact form Submission](docs/readme_images/contact_us_submission.png)
 
-
 ### Existing Features
 
 Features that exist in this current project are listed below
@@ -130,47 +142,46 @@ Features that exist in this current project are listed below
 
 ### Features Left to Implement
 
-As this is a service that does not exist or is not offered and the site only built for Project purposes only the site functionility will remain the same.
+As this is a service that does not exist or is not offered and the site only built for Project purposes only the site functionality will remain the same.
 
 Future Improvement will be focused around the overall Design of the site.
 
 ## Technologies
 
 * HTML
-    * HTML as used as 1 of the primary langauges to code the site. This provided our content to be in a structured manner.
+    * HTML as used as 1 of the primary languages to code the site. This provided our content to be in a structured manner.
 * CSS
     * CSS stylesheet was used to style our website.
 * GitPod
-    * A GitPod Workspace was used to code the website. Using Code Institute GitHub Template some other prefined technologies are installed to allow developers to intagrate to Git for versioning and Python3 for http Server to preview our work before committing to GitHub. I have only named 2 intragations, but the Template does include 8 or more addition extensions.
+    * A GitPod Workspace was used to code the website. Using Code Institute GitHub Template some other predefined technologies are installed to allow developers to integrate to Git for versioning and Python3 for http Server to preview our work before committing to GitHub. I have only named 2 integrations, but the Template does include 8 or more addition extensions.
 * GitHub
-    * Github was used to store our commited Source Code and have a live website using GitHub Pages.
+    * Github was used to store our committed Source Code and have a live website using GitHub Pages.
 * Git 
-    * Version control, intagrated with GitPod
+    * Version control, integrated with GitPod
 * Font Awesome
     * Font Awesome icons were obtained using free registered account https://fontawesome.com/
 * Tinyjpg
     * https://tinyjpg.com/ was used to reduce the size of the images used throughout the website
 * Favicon.io
     * favicon files were created at https://favicon.io/favicon-generator/
-* CSS Cleanup
-    * https://html-cleaner.com/css/ was user to clean up my CSS file to ensure the layout was consitent.
+* CSS Clean-up
+    * https://html-cleaner.com/css/ was user to clean up my CSS file to ensure the layout was consistent.
 
 ### Content 
 
-All writen content on the site is my own is based on services that ,as a parent would like to see offered in 1 centeral location.
+All written content on the site is my own is based on services that ,as a parent would like to see offered in 1 central location.
 
 ### Media
 
-All Images on the site were provided and freely avialable on the listed sites below.
+All Images on the site were provided and freely available on the listed sites below.
 
 * https://www.pexel.com
 * https://iconscout.com/illustrations/404-error
 * Photo by <a href="https://unsplash.com/@artem_kniaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Artem Kniaz</a> on <a href="https://unsplash.com/s/photos/children-playing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-
 ### Credits
 
-Thanks to all forum contributors on the listed weblink which helped me code or resolve issues during the project. Their sample code or explaination helped me to include or add the functions in the website that I wanted.
+Thanks to all forum contributors on the listed weblink which helped me code or resolve issues during the project. Their sample code or explanation helped me to include or add the functions on the website that I wanted.
 
 * https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html
 * https://www.sliderrevolution.com/resources/css-modal/

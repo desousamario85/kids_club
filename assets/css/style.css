@@ -165,10 +165,6 @@ header {
     float: right;
 }
 
-.float-center {
-    float: center
-}
-
 /*Main Content Box*/
 #content-boxs {
     clear: both;
@@ -456,7 +452,7 @@ a.modal-open {
     border-radius: 4px;
     transform: translate(-50%, -200%);
     transition: all .5s ease-in-out;
-    perspective: 1000;
+    perspective: 1000px;
     outline: 1px solid transparent;
     opacity: 0;
 }
