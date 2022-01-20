@@ -14,7 +14,7 @@ Kids Play Club website was created to fulfil most everyday parents needs for the
 
 #### 404 Page report
 
-![404 Page report Image](docs/readme_images/404_page.png)
+![404 Page report Image](docs/readme_images/lighthouse_overal_404.png)
 
 ### w3 Validator
 
@@ -24,7 +24,7 @@ Kids Play Club website was created to fulfil most everyday parents needs for the
 
 #### 404 Page report
 
-![Home Page report Image](docs/readme_images/w3_404.png)
+![404 Page report Image](docs/readme_images/w3_404.png)
 
 
 ### Jigsaw CSS Validator
