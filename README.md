@@ -26,6 +26,11 @@ Kids Play Club website was created to fulfil most everyday parents needs for the
 
 ![Home Page report Image](docs/readme_images/w3_404.png)
 
+
+### Jigsaw CSS Validator
+
+![Jigsaw CSS Image](docs/readme_images/jigsaw_css.png)
+
 ### Accessibility
 
 Wave Evaluation tool was used to check and validate if I had any Accessibility issues
