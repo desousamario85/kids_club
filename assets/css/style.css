@@ -102,6 +102,13 @@ header {
 .hamburger img,
 .close img {
     visibility: hidden;
+
+}
+
+.hamburger,
+.close {
+    color: transparent;
+    visibility: hidden;
 }
 
 /* Logo */
@@ -201,7 +208,7 @@ header {
     clear: both;
     margin-bottom: 20px;
     display: block;
-    height: 600px;
+    min-height: 600px;
 }
 
 #about-us p {
@@ -219,6 +226,7 @@ header {
 
 #why-chose-us li {
     line-height: 2em;
+    list-style-position: inside;
 }
 
 /*Services*/
@@ -597,10 +605,6 @@ a.modal-open {
         font-size: 200%;
     }
 
-    #error_404 {
-        margin-top: 200px;
-    }
-
     .modal-content {
         width: 90%;
     }
@@ -627,14 +631,17 @@ a.modal-open {
         right: 50px;
         width: 36px;
         height: 36px;
+
     }
 
     .hamburger {
         background: #fff;
+        color: transparent
     }
 
     .close {
         background: #fff;
+        color: transparent
     }
 
     .hamburger img,
@@ -733,9 +740,6 @@ a.modal-open {
 }
 
 @media screen and (max-width:400px) {
-    #error_404 {
-        margin-top: 320px;
-    }
 
     #menu li {
         margin-right: 10px;
@@ -743,5 +747,11 @@ a.modal-open {
 
     h1 {
         font-size: 150%;
+        padding-left: 0px
+    }
+
+    #error_404 .contact-button {
+        width: 150px;
+        margin: 20px auto;
     }
 }

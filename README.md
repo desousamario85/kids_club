@@ -6,42 +6,12 @@ Kids Play Club website was created to fulfil most everyday parents needs for the
 
 ![Responsive Mock up Image](docs/readme_images/responsive_mockup.png)
 
-### Lighthouse Testing
-
-#### Home Page report
-
-![Home Page report Image](docs/readme_images/lighthouse_overall.png)
-
-#### 404 Page report
-
-![404 Page report Image](docs/readme_images/lighthouse_overal_404.png)
-
-### w3 Validator
-
-#### Home Page report
-
-![Home Page report Image](docs/readme_images/w3_homepage.png)
-
-#### 404 Page report
-
-![404 Page report Image](docs/readme_images/w3_404.png)
-
-
-### Jigsaw CSS Validator
-
-![Jigsaw CSS Image](docs/readme_images/jigsaw_css.png)
-
-### Accessibility
-
-Wave Evaluation tool was used to check and validate if I had any Accessibility issues
-
 ## Features 
 
 ### Navigation Menu
-    * Contains anchors to the top of the page, About us and Services and Contact Us sections on the web page.
-    * Users can easily navigate through to any section on the site as the Navigation is in a fixed position.
-    * Pure CSS Hamburger menu was implemented for mobile devices. The menu closes automatically when navigation anchor is selected
-    * There is a back to Top button which allows to navigate back to the top of the site.
+* Contains anchors to the top of the page, About us and Services and Contact Us sections on the web page.
+* Users can easily navigate through to any section on the site as the Navigation is in a fixed position.
+* Pure CSS Hamburger menu was implemented for mobile devices. The menu closes automatically when navigation anchor is selected
 
 **Desktop Navigation**
 
@@ -55,13 +25,15 @@ Wave Evaluation tool was used to check and validate if I had any Accessibility i
 
 ![Mobile Navigation Image ](docs/readme_images/nav_mobile.png)
 
+There is a back to Top button which allows to navigate back to the top of the site.
+
 **Back to Top**
 
 ![Back to top button Image](docs/readme_images/nav_back_to_top.png)
 
 ### Footer
     
-    * The footer contains all the common social media weblinks. They are place holders, and they only navigate to the each social media platform land page.
+* The footer contains all the common social media weblinks. They are place holders, and they only navigate to the each social media platform land page.
 
 **Footer**
 
@@ -123,12 +95,12 @@ On our Contact Us section, I have the operating hours for the services and a con
 
 ![Contact Us Section Image](docs/readme_images/contact_us_section.png)
 
-    * A contact form will be implemented to allow users to contact Kids Play Club. The following inputs will be required by the user.
-        * First Name (required, type=text)
-        * Last Name (required, type=text)
-        * Email (required, type=email)
-        * Services Required (required, type=select)
-        * Sign up to our weekly newsletter
+* A contact form will be implemented to allow users to contact Kids Play Club. The following inputs will be required by the user.
+    * First Name (required, type=text)
+    * Last Name (required, type=text)
+    * Email (required, type=email)
+    * Services Required (required, type=select)
+    * Sign up to our weekly newsletter
     * When the user click on  "Send Enquiry" they will be navigated to Code Institute
 
     **Successful submission**
@@ -171,6 +143,84 @@ Future Improvement will be focused around the overall Design of the site.
     * favicon files were created at https://favicon.io/favicon-generator/
 * CSS Clean-up
     * https://html-cleaner.com/css/ was user to clean up my CSS file to ensure the layout was consistent.
+
+### Testing
+ 
+For testing the reponsiviness of the site, I used Chrome Developer Tool to resize the window from 1920px down 320px. Then same steps were applied with 50% zoom on the page. 
+
+The site was testing on following mobile devices on Developer Tools
+
+* iPhone SE
+* Pixel 5
+* Surface Pro 7
+* Samsung Galazy A51/71
+
+The site was also tested on different browsers. Lambdatest.com was used to test Firefox and Safari browsers.
+Safari was running on MacOS Mojave version during the tests.
+
+* Google Chrome
+* Edge
+* FireFox
+* Safari
+
+### Validator Testing 
+
+Various validating tools were used to test the site, which can seen on the reports below.
+
+#### Lighthouse Reports
+
+##### Home Page report
+
+![Home Page report Image](docs/readme_images/lighthouse_overall.png)
+
+##### 404 Page report
+
+![404 Page report Image](docs/readme_images/lighthouse_overal_404.png)
+
+#### w3 Validator
+
+##### Home Page report
+
+![Home Page report Image](docs/readme_images/w3_homepage.png)
+
+##### 404 Page report
+
+![404 Page report Image](docs/readme_images/w3_404.png)
+
+
+#### Jigsaw CSS Validator
+
+![Jigsaw CSS Image](docs/readme_images/jigsaw_css.png)
+
+#### Accessibility
+
+Wave Evaluation tool was used to check and validate if I had any Accessibility issues
+
+##### Homepage Wave Report
+
+![Wave Homepage Image](docs/readme_images/wave_homepage.png)
+
+##### 404 Wave Report
+
+![Wave Homepage Image](docs/readme_images/wave_404.png)
+
+### Unresolved Bugs
+
+The webiste is responding great to the variuos mobile and desktop browsers. On the Mobile device the "X" in the mobile device has a line running through it when hovered over. This will be resolved on the next update of the website, when we start introducing more technologies to the site.
+
+### Deployment
+
+#### Deployment to Github Pages
+
+The site was deployed to GitHub pages. The following steps were used to deploy the site.
+
+1. In the GitHub repository, navigate to the Settings tab
+![Deployment Step1 Image](docs/readme_images/deployment_step1.png)
+2. From the menu on left select 'Pages'
+3. From the source section drop-down menu, select the Branch: main
+4. Click 'Save'
+5. A live link will be displayed in a green banner when published successfully.
+![Deployment Pages Steps Image](docs/readme_images/deployment_steps.png)
 
 ### Content 
 
