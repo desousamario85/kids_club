@@ -56,10 +56,15 @@ There is a back to Top button which allows to navigate back to the top of the si
 
 ### Landing Page
 
+The landing page or the top of the site is diplaying kids playing with kite like material, this was to demostat to the visitors that the club is all about having fun.
+
 ![Landing Page Image](docs/readme_images/landing_section.png)
 
 
 ### About Us
+
+The About section provides insights to the users about the Kids Play Club and what they have to offer and why they should consider bring their kids to our club.
+
 
 ![About Us Section Image](docs/readme_images/about_us_section.png)
 
@@ -208,7 +213,19 @@ Wave Evaluation tool was used to check and validate if I had any Accessibility i
 
 The webiste is responding great to the variuos mobile and desktop browsers. On the Mobile device the "X" in the mobile device has a line running through it when hovered over. This will be resolved on the next update of the website, when we start introducing more technologies to the site.
 
-### Deployment
+## Deployment
+
+### Versioning
+
+The site was created using the GitPod workspaces which had Git installed part of it's extentions.
+
+Git commands were used to push through our code to Github, which can be seen below.
+
+``` git add <filename> ``` This command was used to add the file(s) to the staging area before they are committed.
+Most of the time ``` git add . ``` was used to stage the files for committing
+
+``` git commit -m “commit message” ``` This allows us to commit our changes to the local repository
+```git push``` pushes our code to GitHub to be published to our live site on Github Pages 
 
 #### Deployment to Github Pages
 
